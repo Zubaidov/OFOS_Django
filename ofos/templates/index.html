@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- custom css file cdn link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 <body>
@@ -38,12 +39,10 @@
 
     <nav class="navbar">
         <a href="#">home</a>
-        <a href="#">packages</a>
-        <a href="#">services</a>
-        <a href="#">pricing</a>
-        <a href="#">review</a>
-        <a href="#">Contact</a>
-        <a href="#" action="">About US</a>
+        <a href="#">Contuct Us</a>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">FAQ</a>
     </nav>
     
 </header>
@@ -107,7 +106,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/blog-1.jpg" alt="">
+                <img src="{% static 'images/blog-1.jpg' %}" alt="">
                 <h3> <i class="fas fa-utensils"></i> Burger </h3>
             </div>
             <div class="content">
@@ -119,7 +118,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/blog-2.jpg" alt="">
+                <img src="{% static 'images/blog-2.jpg' %}" alt="">
                 <h3> <i class="fas fa-utensils"></i> Burger </h3>
             </div>
             <div class="content">
@@ -131,7 +130,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/blog-3.jpg" alt="">
+                <img src="{% static 'images/blog-3.jpg' %}" alt="">
                 <h3> <i class="fas fa-utensils"></i> Burger </h3>
             </div>
             <div class="content">
@@ -143,7 +142,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/blog-4.jpg" alt="">
+                <img src="{% static 'images/blog-4.jpg' %}" alt="">
                 <h3> <i class="fas fa-utensils"></i> Burger </h3>
             </div>
             <div class="content">
@@ -155,7 +154,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/blog-5.jpg" alt="">
+                <img src="{% static 'images/blog-5.jpg' %}" alt="">
                 <h3> <i class="fas fa-utensils"></i> Burger </h3>
             </div>
             <div class="content">
@@ -167,7 +166,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/blog-6.jpg" alt="">
+                <img src="{% static 'images/blog-6.jpg' %}" alt="">
                 <h3> <i class="fas fa-utensils"></i> Burger </h3>
             </div>
             <div class="content">
@@ -260,7 +259,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide slide">
-                <img src="images/pic-1.png" alt="">
+                <img src="{% static 'images/pic-1.png' %}" alt="">
                 <h3>Dato Khukhunadze</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
                 <div class="stars">
@@ -273,7 +272,7 @@
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-2.png" alt="">
+                <img src="{% static 'images/pic-2.png' %}" alt="">
                 <h3>Salome Bakopia</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
                 <div class="stars">
@@ -286,7 +285,7 @@
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-3.png" alt="">
+                <img src="{% static 'images/pic-3.png' %}" alt="">
                 <h3>Giorgi Baratashvili</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
                 <div class="stars">
@@ -299,7 +298,7 @@
             </div>
 
             <div class="swiper-slide slide">
-                <img src="images/pic-4.png" alt="">
+                <img src="{% static 'images/pic-4.png' %}" alt="">
                 <h3>Makrine Tepnadze</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
                 <div class="stars">
@@ -373,7 +372,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/img2.jpg" alt="">
+                <img src="{% static 'images/img2.jpg' %}" alt="">
             </div>
             <div class="content">
                 <h3>How many types of burger are there?</h3>
@@ -387,7 +386,7 @@
 
         <div class="box" data-aos="fade-up">
             <div class="image">
-                <img src="images/img3.jpg" alt="">
+                <img src="{% static 'images/img3.jpg' %}" alt="">
             </div>
             <div class="content">
                 <h3>Did you know some facts about pizza?</h3>
@@ -461,7 +460,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
 
 <script>
 
