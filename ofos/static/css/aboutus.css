@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+h1{
+    color: brown;
+    padding: 100px;
+    margin: 100px;
+}
+
+body{
+    background:var(--bg-color-2);
+}

@@ -13,3 +13,6 @@ def contactus(request):
 
 def faq(request):
     return render(request, 'faq.html')
+
+def add(request):
+    return render(request, 'Hello World!')
