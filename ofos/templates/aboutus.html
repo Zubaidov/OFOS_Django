@@ -9,25 +9,15 @@
     </head>
     <body>
         
-        <div>
-            <h1>Salom Mardum</h1>
+        <div class="mian-div">
+            <div class="main-div2">
+                <h1>Salom Mardum</h1>
+                <h2>Name: {{ cl_name }}</h2>
+                <h2>Surname: {{ cl_email }} </h2>
+                <h2>Client Number: {{ cl_number }}</h2>
+                <h2>Client Subject: {{cl_subjct}}</h2>
+            </div>
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-        <!-- custom js file link  -->
-        <script src="{% static 'js/script.js' %}"></script>
-        
-        <script>
-        
-        AOS.init({
-            duration:800,
-            delay:400
-        });
-        
-        </script>
     
     </body>
 </html>

@@ -15,4 +15,8 @@ def faq(request):
     return render(request, 'faq.html')
 
 def add(request):
-    return render(request, 'Hello World!')
+    cl_name = request.GET['cl_name']
+    cl_email = request.GET['cl_email']
+    cl_number = request.GET['cl_number']
+    cl_subject = request.GET['cl_subject']
+    return render(request, 'aboutus.html', {'cl_name': cl_name, 'cl_email': cl_email, 'cl_number' : cl_number, 'cl_subject' : cl_subject})

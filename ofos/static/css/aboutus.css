@@ -1,21 +1,21 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-}
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: bisque;
+    }
 
-h1{
-    color: brown;
-    padding: 100px;
-    margin: 100px;
-}
+    .mian-div{
+        height: 100%;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
 
-body{
-    background:var(--bg-color-2);
-}
+    .main-div2{
+        text-align: center;
+        height: 400px;
+        width: 400px;
+    }
