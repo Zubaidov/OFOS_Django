@@ -1,25 +1,22 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
-    </head>
-    <body>
-        
-        <div class="mian-div">
-            <div class="main-div2">
-                <h1>Salom Mardum</h1>
-                <h2>Name: {{ cl_name }}</h2>
-                <h2>Surname: {{ cl_email }} </h2>
-                <h2>Client Number: {{ cl_number }}</h2>
-                <h2>Client Subject: {{cl_subjct}}</h2>
-            </div>
-        </div>
-    
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}" />
+  </head>
+  <body>
+    <div class="mian-div">
+      <div class="main-div2">
+        <h1>Salom Mardum</h1>
+        <h2>Name: {{ cl_name }}</h2>
+        <h2>Surname: {{ cl_email }}</h2>
+        <h2>Client Number: {{ cl_number }}</h2>
+        <h2>Client Subject: {{ cl_subject }}</h2>
+        <h2>Client Message: {{ cl_textmessage }}</h2>
+      </div>
+    </div>
+  </body>
 </html>
 
 {% endblock %}

@@ -1,27 +1,29 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>IBSU</title>
- 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
     <!-- custom css file cdn link  -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-</head>
-<body>
-
-<!-- header section starts
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <!-- header section starts
 
 <header class="header">
 
@@ -51,362 +53,406 @@
 
 header section ends -->
 
-<!-- home section starts  -->
+    <!-- home section starts  -->
 
-<section class="home" id="home">
+    <section class="home" id="home">
+      <div class="image" data-aos="fade-down">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/8hZcUxUOBb4GV1JiDsz1USpT29w=/385x352:1561x1061/1200x800/filters:focal(831x620:1137x926)/cdn.vox-cdn.com/uploads/chorus_image/image/70609268/Burger_King_Plant_based_Double_Cheeezeburger.0.jpg"
+          alt=""
+        />
+      </div>
 
-    <div class="image" data-aos="fade-down">
-        <img src="https://cdn.vox-cdn.com/thumbor/8hZcUxUOBb4GV1JiDsz1USpT29w=/385x352:1561x1061/1200x800/filters:focal(831x620:1137x926)/cdn.vox-cdn.com/uploads/chorus_image/image/70609268/Burger_King_Plant_based_Double_Cheeezeburger.0.jpg" alt="">
-    </div>
-
-    <div class="content" data-aos="fade-up">
+      <div class="content" data-aos="fade-up">
         <h3>Top Delicious Burgers</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo eius inventore reprehenderit alias eos facilis, ipsa est asperiores repellendus!</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          explicabo eius inventore reprehenderit alias eos facilis, ipsa est
+          asperiores repellendus!
+        </p>
         <a href="#" class="btn">explore now</a>
-    </div>
+      </div>
+    </section>
 
-</section>
+    <!-- home section ends -->
 
-<!-- home section ends -->
+    <!-- filter form section starts  -->
 
-<!-- filter form section starts  -->
-
-<section class="form-container" data-aos="zoom-in">
-
-    <form action="">
-
+    <section class="form-container" data-aos="zoom-in">
+      <form action="">
         <div class="inputBox">
-            <span>where</span>
-            <input type="text" placeholder="search places">
+          <span>where</span>
+          <input type="text" placeholder="search places" />
         </div>
 
         <div class="inputBox">
-            <span>When</span>
-            <input type="date">
+          <span>When</span>
+          <input type="date" />
         </div>
 
         <div class="inputBox">
-            <span>Time</span>
-            <input type="time">
+          <span>Time</span>
+          <input type="time" />
         </div>
 
-        <input type="submit" value="book now" class="btn">
+        <input type="submit" value="book now" class="btn" />
+      </form>
+    </section>
 
-    </form>
+    <!-- filter form section ends -->
 
-</section>
+    <!-- packages section starts  -->
 
-<!-- filter form section ends -->
+    <section class="packages" id="packages">
+      <h1 class="heading">our <span>Foods</span></h1>
 
-<!-- packages section starts  -->
-
-<section class="packages" id="packages">
-
-    <h1 class="heading"> our <span>Foods</span> </h1>
-
-    <div class="box-container">
-
+      <div class="box-container">
         <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/blog-1.jpg' %}" alt="">
-                <h3> <i class="fas fa-utensils"></i> Burger </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 290.99 <span>350.99</span> </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
-                <a href="#" class="btn"> Order now</a>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/blog-2.jpg' %}" alt="">
-                <h3> <i class="fas fa-utensils"></i> Burger </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 290.99 <span>350.99</span> </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
-                <a href="#" class="btn"> Order now</a>
-            </div>
+          <div class="image">
+            <img src="{% static 'images/blog-1.jpg' %}" alt="" />
+            <h3><i class="fas fa-utensils"></i> Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              vitae.
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
         </div>
 
         <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/blog-3.jpg' %}" alt="">
-                <h3> <i class="fas fa-utensils"></i> Burger </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 290.99 <span>350.99</span> </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
-                <a href="#" class="btn"> Order now</a>
-            </div>
+          <div class="image">
+            <img src="{% static 'images/blog-2.jpg' %}" alt="" />
+            <h3><i class="fas fa-utensils"></i> Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              vitae.
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
         </div>
 
         <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/blog-4.jpg' %}" alt="">
-                <h3> <i class="fas fa-utensils"></i> Burger </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 290.99 <span>350.99</span> </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
-                <a href="#" class="btn"> Order now</a>
-            </div>
+          <div class="image">
+            <img src="{% static 'images/blog-3.jpg' %}" alt="" />
+            <h3><i class="fas fa-utensils"></i> Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              vitae.
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
         </div>
 
         <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/blog-5.jpg' %}" alt="">
-                <h3> <i class="fas fa-utensils"></i> Burger </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 290.99 <span>350.99</span> </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
-                <a href="#" class="btn"> Order now</a>
-            </div>
+          <div class="image">
+            <img src="{% static 'images/blog-4.jpg' %}" alt="" />
+            <h3><i class="fas fa-utensils"></i> Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              vitae.
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
         </div>
 
         <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/blog-6.jpg' %}" alt="">
-                <h3> <i class="fas fa-utensils"></i> Burger </h3>
-            </div>
-            <div class="content">
-                <div class="price"> 290.99 <span>350.99</span> </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
-                <a href="#" class="btn"> Order now</a>
-            </div>
+          <div class="image">
+            <img src="{% static 'images/blog-5.jpg' %}" alt="" />
+            <h3><i class="fas fa-utensils"></i> Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              vitae.
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
         </div>
 
-    </div>
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="{% static 'images/blog-6.jpg' %}" alt="" />
+            <h3><i class="fas fa-utensils"></i> Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              vitae.
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <!-- packages section ends -->
 
-<!-- packages section ends -->
- 
+    <!-- pricing section starts  -->
 
-<!-- pricing section starts  -->
+    <section class="pricing" id="pricing">
+      <h1 class="heading">our <span>pricing</span></h1>
 
-<section class="pricing" id="pricing">
-
-    <h1 class="heading"> our <span>pricing</span> </h1>
-
-    <div class="box-container">
-
+      <div class="box-container">
         <div class="box" data-aos="zoom-in-up">
-            <h3> basic plan </h3>
-            <div class="price">
-                <span>$</span>
-                <span class="amount">30</span>
-                <span>/mo</span>
-            </div>
-            <ul>
-                <li>10 days</li>
-                <li>food and drinks</li>
-                <li>safty guide</li>
-                <li>insurance</li>
-                <li>luxury hotel</li>
-            </ul>
-            <a href="#" class="btn">choose plan</a>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up">
-            <h3> standard plan </h3>
-            <div class="price">
-                <span>$</span>
-                <span class="amount">50</span>
-                <span>/mo</span>
-            </div>
-            <ul>
-                <li>20 days</li>
-                <li>food and drinks</li>
-                <li>safty guide</li>
-                <li>insurance</li>
-                <li>luxury hotel</li>
-            </ul>
-            <a href="#" class="btn">choose plan</a>
+          <h3>basic plan</h3>
+          <div class="price">
+            <span>$</span>
+            <span class="amount">30</span>
+            <span>/mo</span>
+          </div>
+          <ul>
+            <li>10 days</li>
+            <li>food and drinks</li>
+            <li>safty guide</li>
+            <li>insurance</li>
+            <li>luxury hotel</li>
+          </ul>
+          <a href="#" class="btn">choose plan</a>
         </div>
 
         <div class="box" data-aos="zoom-in-up">
-            <h3> premium plan </h3>
-            <div class="price">
-                <span>$</span>
-                <span class="amount">90</span>
-                <span>/mo</span>
-            </div>
-            <ul>
-                <li>30 days</li>
-                <li>food and drinks</li>
-                <li>safty guide</li>
-                <li>insurance</li>
-                <li>luxury hotel</li>
-            </ul>
-            <a href="#" class="btn">choose plan</a>
+          <h3>standard plan</h3>
+          <div class="price">
+            <span>$</span>
+            <span class="amount">50</span>
+            <span>/mo</span>
+          </div>
+          <ul>
+            <li>20 days</li>
+            <li>food and drinks</li>
+            <li>safty guide</li>
+            <li>insurance</li>
+            <li>luxury hotel</li>
+          </ul>
+          <a href="#" class="btn">choose plan</a>
         </div>
 
-    </div>
+        <div class="box" data-aos="zoom-in-up">
+          <h3>premium plan</h3>
+          <div class="price">
+            <span>$</span>
+            <span class="amount">90</span>
+            <span>/mo</span>
+          </div>
+          <ul>
+            <li>30 days</li>
+            <li>food and drinks</li>
+            <li>safty guide</li>
+            <li>insurance</li>
+            <li>luxury hotel</li>
+          </ul>
+          <a href="#" class="btn">choose plan</a>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <!-- pricing section ends -->
 
-<!-- pricing section ends -->
+    <!-- review section starts  -->
 
-<!-- review section starts  -->
+    <section class="review" id="review">
+      <h1 class="heading">client's <span>review</span></h1>
 
-<section class="review" id="review">
-
-    <h1 class="heading"> client's <span>review</span> </h1>
-
-    <div class="swiper-container review-slider" data-aos="zoom-in">
-
+      <div class="swiper-container review-slider" data-aos="zoom-in">
         <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide">
-                <img src="{% static 'images/pic-1.png' %}" alt="">
-                <h3>Dato Khukhunadze</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide slide">
+            <img src="{% static 'images/pic-1.png' %}" alt="" />
+            <h3>Dato Khukhunadze</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide slide">
-                <img src="{% static 'images/pic-2.png' %}" alt="">
-                <h3>Salome Bakopia</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide slide">
+            <img src="{% static 'images/pic-2.png' %}" alt="" />
+            <h3>Salome Bakopia</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide slide">
-                <img src="{% static 'images/pic-3.png' %}" alt="">
-                <h3>Giorgi Baratashvili</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide slide">
+            <img src="{% static 'images/pic-3.png' %}" alt="" />
+            <h3>Giorgi Baratashvili</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
+          </div>
 
-            <div class="swiper-slide slide">
-                <img src="{% static 'images/pic-4.png' %}" alt="">
-                <h3>Makrine Tepnadze</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+          <div class="swiper-slide slide">
+            <img src="{% static 'images/pic-4.png' %}" alt="" />
+            <h3>Makrine Tepnadze</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
             </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-      
+    <!-- review section ends -->
 
-    </div>
+    <!-- contact section starts  -->
 
-</section>
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
 
-<!-- review section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> us </h1>
-
-    <form action="add" data-aos="zoom">
+      <form action="add" data-aos="zoom">
+        <div class="inputBox">
+          <input
+            type="text"
+            placeholder="Your Full Name"
+            name="cl_name"
+            data-aos="fade-up"
+          />
+          <input
+            type="email"
+            placeholder="Eamil"
+            name="cl_email"
+            data-aos="fade-up"
+          />
+        </div>
 
         <div class="inputBox">
-            <input type="text" placeholder="Your Full Name" name="cl_name" data-aos="fade-up">
-            <input type="email" placeholder="Eamil" name="cl_email" data-aos="fade-up">
+          <input
+            type="number"
+            placeholder="Number"
+            name="cl_number"
+            data-aos="fade-up"
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            name="cl_subject"
+            data-aos="fade-up"
+          />
         </div>
 
-        <div class="inputBox">
-            <input type="number" placeholder="Number" name="cl_number" data-aos="fade-up">
-            <input type="text" placeholder="Subject" name="cl_subjct" data-aos="fade-up">
-        </div>
+        <textarea
+          name="cl_textmessage"
+          placeholder="your message"
+          id=""
+          cols="30"
+          rows="10"
+          data-aos="fade-up"
+        ></textarea>
 
-        <textarea name="" placeholder="your message" id="" cols="30" rows="10" data-aos="fade-up"></textarea>
-        
-        <input type="submit" value="send message" class="btn">
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
 
-    </form>
+    <!-- contact section ends -->
 
-</section>
+    <!-- blog section starts  -->
 
-<!-- contact section ends -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span>blogs</span></h1>
 
-<!-- blog section starts  -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> our <span>blogs</span> </h1>
-
-    <div class="box-container">
-
+      <div class="box-container">
         <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="https://www.venturists.net/wp-content/uploads/2017/07/Khinkali-735x501.jpg" alt="">
+          <div class="image">
+            <img
+              src="https://www.venturists.net/wp-content/uploads/2017/07/Khinkali-735x501.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h3>What is Khinkali and Khachapuri?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
             </div>
-            <div class="content">
-                <h3>What is Khinkali and Khachapuri?</h3>
-                <a href="#" class="btn">read more</a>
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/img2.jpg' %}" alt="">
-            </div>
-            <div class="content">
-                <h3>How many types of burger are there?</h3>
-                <a href="#" class="btn">read more</a>
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-            </div>
+          </div>
         </div>
 
         <div class="box" data-aos="fade-up">
-            <div class="image">
-                <img src="{% static 'images/img3.jpg' %}" alt="">
+          <div class="image">
+            <img src="{% static 'images/img2.jpg' %}" alt="" />
+          </div>
+          <div class="content">
+            <h3>How many types of burger are there?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
             </div>
-            <div class="content">
-                <h3>Did you know some facts about pizza?</h3>
-                <a href="#" class="btn">read more</a>
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-            </div>
+          </div>
         </div>
 
-    </div>
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="{% static 'images/img3.jpg' %}" alt="" />
+          </div>
+          <div class="content">
+            <h3>Did you know some facts about pizza?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <!-- blog section ends -->
 
-<!-- blog section ends -->
-
-<!-- footer section starts
+    <!-- footer section starts
 
 <section class="footer">
 
@@ -457,23 +503,20 @@ header section ends -->
 
 footer section ends -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- custom js file link  -->
-<script src="{% static 'js/script.js' %}"></script>
+    <!-- custom js file link  -->
+    <script src="{% static 'js/script.js' %}"></script>
 
-<script>
-
-AOS.init({
-    duration:800,
-    delay:400
-});
-
-</script>
-
-</body>
+    <script>
+      AOS.init({
+        duration: 800,
+        delay: 400,
+      });
+    </script>
+  </body>
 </html>
 
 {% endblock %}

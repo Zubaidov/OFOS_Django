@@ -17,6 +17,12 @@ def faq(request):
 def add(request):
     cl_name = request.GET['cl_name']
     cl_email = request.GET['cl_email']
-    cl_number = request.GET['cl_number']
+    cl_number = int(request.GET['cl_number'])
     cl_subject = request.GET['cl_subject']
-    return render(request, 'aboutus.html', {'cl_name': cl_name, 'cl_email': cl_email, 'cl_number' : cl_number, 'cl_subject' : cl_subject})
+    cl_textmessage = request.GET['cl_textmessage']
+    return render(request, 'aboutus.html', {
+        'cl_name': cl_name, 
+        'cl_email': cl_email, 
+        'cl_number' : cl_number,
+        'cl_subject' : cl_subject,
+        'cl_textmessage': cl_textmessage })

@@ -1,1 +1,84 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="path/to/owl.carousel.min.css">
+  <title>My App</title>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">My App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to My App</h1>
+        <p class="lead">This is a simple example of a home page using Bootstrap 5, HTML, CSS, and JavaScript.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Feature 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna non bibendum imperdiet, ipsum nibh congue augue, id congue massa magna id est.</p>
+        </div>
+        <div class="col-sm">
+          <h2>Feature 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna non b
+
+            <div class="owl-carousel">
+                <div><img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg"></div>
+                <div><img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg"></div>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXiP8wywnpSo6mqkV4f0JdOEtdAXyykzBjFpf9QkLytqP7T1YFE3TwC52jtHz80P1J1c&usqp=CAU"></div>
+              </div>
+
+            <script> 
+
+              $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+            
+        </script>
+
+        <script src="path/to/jquery.min.js"></script>
+        <script src="path/to/owl.carousel.min.js"></script>
+
