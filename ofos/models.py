@@ -13,4 +13,7 @@ class FoodModel(models.Model):
     price = models.IntegerField()
     offer = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.name
+
 # Create your models here.
