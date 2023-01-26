@@ -116,9 +116,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = ''
+STATIC_ROOT = '/home/ubuntu/OFOS_Django/ofos'
 STATIC_URL = 'static/'
-STATIC_PATH = ''
+STATICFILES_DIRS = (
+    ('assets', '/home/ubuntu/OFOS_Django/ofos/static/'),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
