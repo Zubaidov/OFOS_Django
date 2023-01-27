@@ -1,0 +1,21 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: bisque;
+    }
+
+    .mian-div{
+        height: 100%;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .main-div2{
+        text-align: center;
+        height: 400px;
+        width: 400px;
+    }
