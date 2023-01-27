@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from ofos.models import FoodModel
+from ofos.models import FoodModel, ProductModel
 # Create your views here.
 
 def home(request):
-    dests = FoodModel.objects.all()
-    return render(request, 'home.html', {'dests' : dests})
+    sandwiches = FoodModel.objects.all()
+    products = ProductModel.objects.all()
+    return render(request, 'home.html', {'sandwiches' : sandwiches, 'products' : products})
 
 def aboutus(request):
     return render(request, 'aboutus.html')

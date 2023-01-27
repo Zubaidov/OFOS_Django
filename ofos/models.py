@@ -9,11 +9,21 @@ class FoodModel(models.Model):
     #price : int
     img = models.ImageField(upload_to='images')
     name = models.CharField(max_length=100)
-    desc = models.CharField(max_length=500)
+    desc = models.TextField()
     price = models.IntegerField()
-    offer = models.BooleanField(default=False)
+    offer = models.FloatField(default=0)
 
     def __str__(self):
         return self.name
+
+class ProductModel(models.Model):
+    img = models.ImageField(upload_to='product_img')
+    name = models.CharField(max_length=100)
+    desc = models.TextField()
+    price = models.FloatField()
+    offer = models.FloatField(default=0)
+
+    def __str__(self):
+        return self.name, self.desc
 
 # Create your models here.
