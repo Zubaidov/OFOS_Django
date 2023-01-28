@@ -14,7 +14,7 @@ class FoodModel(models.Model):
     offer = models.FloatField(default=0)
 
     def __str__(self):
-        return self.name, self.desc
+        return self.name
 
 class ProductModel(models.Model):
     img = models.ImageField(upload_to='product_img')
@@ -24,6 +24,6 @@ class ProductModel(models.Model):
     offer = models.FloatField(default=0)
 
     def __str__(self):
-        return self.name, self.desc
+        return self.name
 
 # Create your models here.
