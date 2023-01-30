@@ -9,49 +9,65 @@
 
     <title>Online Food Ordering System</title>
 
+    <!-- ===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/stl_navbar.css' %}" />
   </head>
   <body>
-    <!-- header section starts -->
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="#">CodingLab</a></span>
 
-    <!--
-    <header class="header">
-      <a href="{% url 'home' %}" class="logo">
-        <i class="fas fa-utensils"></i> BEST_FOOD
-      </a>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#">CodingLab</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
 
-      <form action="" class="search-form">
-        <input type="search" name="" placeholder="Search" id="searchBox" />
-        <label for="searchBox" class="fas fa-search"></label>
-      </form>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
 
-      <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-share" id="theme-btn"></div>
-        <div class="fas fa-user" id="login-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+
+            <div class="search-field">
+              <input type="text" placeholder="Search..." />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
       </div>
+    </nav>
 
-      <nav class="navbar">
-        <a href="{% url 'home' %}">Home</a>
-        <a href="{% url 'contactus' %}">Contuct Us</a>
-        <a href="{% url 'aboutus' %}">About Us</a>
-        <a href="{% url 'home' %}">Privacy Policy</a>
-        <a href="{% url 'FAQ' %}">FAQ</a>
-      </nav>
-    </header>
--->
-    <!-- header section ends -->
     {% block content %} {% endblock %}
 
     <!-- footer section starts  -->
@@ -110,6 +126,10 @@
 
     <!-- custom js file link  -->
     <script src="{% static 'js/script.js' %}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'script_navbar.js' %}"
+    ></script>
 
     <script>
       AOS.init({
